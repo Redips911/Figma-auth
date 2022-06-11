@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800&display=swap");
+.container_login .login_panel .login_panel2, .container_login .login_panel .login_panel2 button, .footer_login {
+  font-family: 'Mulish';
+  font-style: normal;
+}
+
+.container_login .login_panel .login_panel2 a, .footer_login a {
+  font-family: 'Mulish';
+  font-style: normal;
+  color: #625bf7;
+  text-decoration: none;
+}
+
+.background .pattern .rectangle1, .background .pattern .rectangle2, .background .pattern .rectangle3 {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #F5F5F5;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background .pattern {
+  position: absolute;
+  height: 64.67%;
+  width: 100%;
+  bottom: 0;
+}
+
+.background .pattern .rectangle1 {
+  background-color: #5bf7db;
+  -webkit-clip-path: polygon(1.56% 0, 97.44% 44%, 97.44% 100%, 1.56% 100%);
+          clip-path: polygon(1.56% 0, 97.44% 44%, 97.44% 100%, 1.56% 100%);
+}
+
+.background .pattern .rectangle2 {
+  background-color: white;
+  -webkit-clip-path: polygon(0 0, 100% 46%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 46%, 100% 100%, 0 100%);
+}
+
+.background .pattern .rectangle3 {
+  background-color: white;
+  -webkit-clip-path: polygon(20.63% 8.6%, 79.36% 35.5%, 79.36% 100%, 20.63% 100%);
+          clip-path: polygon(20.63% 8.6%, 79.36% 35.5%, 79.36% 100%, 20.63% 100%);
+}
+
+.background .vertical_lines {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20.5px;
+}
+
+.background .vertical_lines .lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .background .vertical_lines .lines {
+    display: none;
+  }
+}
+
+.background .vertical_lines .line {
+  border-right: 2px dashed #000000;
+  margin-right: 190px;
+  opacity: 0.06;
+  height: 100%;
+}
+
+.container_login {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.container_login .login_panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 36px;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container_login .login_panel .login_panel2 {
+  display: flexbox;
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  min-width: 342px;
+  max-width: 454px;
+  border-radius: 4px;
+  padding: 50px 9.56% 50px 9.56%;
+}
+
+.container_login .login_panel .login_panel2 p {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #757575;
+}
+
+.container_login .login_panel .login_panel2 h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  white-space: nowrap;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 30px;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 468px) {
+  .container_login .login_panel .login_panel2 h1 {
+    font-size: 22px;
+  }
+}
+
+.container_login .login_panel .login_panel2 label {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.container_login .login_panel .login_panel2 input {
+  color: #424242;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 0 14px 9px 12px;
+  height: 45px;
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container_login .login_panel .login_panel2 input:focus {
+  outline: none;
+}
+
+.container_login .login_panel .login_panel2 #email {
+  margin-bottom: 15px;
+}
+
+.container_login .login_panel .login_panel2 #password {
+  margin-bottom: 30px;
+}
+
+.container_login .login_panel .login_panel2 button {
+  color: #FFFFFF;
+  height: 45px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#625BF7), to(#463EEA));
+  background: linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 16px;
+  border-style: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.container_login .login_panel .login_panel2 button:active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#625BF7), to(#463EEA));
+  background: linear-gradient(0deg, #625BF7 0%, #463EEA 100%);
+}
+
+.container_login .login_panel .login_panel2 a {
+  font-weight: 700;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer_login {
+  margin-top: 50px;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 400;
+  font-size: 12px;
+}
