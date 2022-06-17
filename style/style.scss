@@ -27,10 +27,11 @@ $rectangle-color: rgba(248, 250, 252, 1);
 }
 
 html,body {
-    position: relative;
+    position: static;
     height: 100%;
     width: 100%;
     background-color: #F5F5F5;
+    
 }
 
 .background {
@@ -109,8 +110,6 @@ html,body {
         flex-direction: column;
 
         .login_panel2 {
-            display: flexbox;
-            position: relative;
             height: max-content;
             box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
             background-color: #ffffff;
@@ -133,10 +132,10 @@ html,body {
                 white-space: nowrap;
                 font-weight: 700;
                 color: #333333;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
                 height: 30px;
                 align-items: center;
-                transition: 0.2s
+                transition: 0.2s;
             }
             
             @media screen and (max-width:468px) {
@@ -149,6 +148,7 @@ html,body {
                 font-size: 14px;
                 color: #333333;
                 margin-bottom: 10px;
+                margin-top: 10px;
             }
 
             input {
@@ -168,14 +168,6 @@ html,body {
                 }
             }
 
-            #email {
-                margin-bottom: 15px;
-            }
-
-            #password {
-                margin-bottom: 30px;
-            }
-
             button {
                 color: #FFFFFF;
                 height: 45px;
@@ -187,6 +179,7 @@ html,body {
                 @extend %font-style;
                 border-style: none;
                 cursor: pointer;
+                margin-top: 30px;
                 margin-bottom: 20px;
 
                 &:active {
@@ -201,17 +194,28 @@ html,body {
                 display: flex;
                 justify-content: center;
             }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
     }
 }
 
 .footer_login {
-    margin-top: 50px;
+    margin-top: 25px;
     @extend %font-style;
     position: relative;
     align-self: center;
     font-weight: 400;
     font-size: 12px;
+
+    p {
+        margin:5px;
+    }
+
     a {
         @extend %link_style;
     }
